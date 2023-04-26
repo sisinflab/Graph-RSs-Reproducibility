@@ -77,6 +77,8 @@ In addition to the graph-based models from above, we train and test four classic
 
 |         | **Gowalla** | **Yelp 2018** | **Amazon Book** |
 |---------|-------------|---------------|-----------------|
+| MostPop |             |               |                 |
+| Random  |             |               |                 |
 | UserkNN |             |               |                 |
 | ItemkNN |             |               |                 |
 | RP3Beta |             |               |                 |
