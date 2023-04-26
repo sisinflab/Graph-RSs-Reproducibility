@@ -73,5 +73,5 @@ The following table provides links to the specific configuration of hyper-parame
 | GFCF     |   [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/gfcf_gowalla.yml)   |   [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/gfcf_yelp-2018.yml)   |   [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/gfcf_amazon-book.yml)   |
 
 ### Benchmarking graph CF approaches using alternative baselines (RQ2)
-In addition to the graph-based models from above, we train and test four classic (and strong) CF baselines. We also provide pointers to the configuration files with the exploration of hyper-parameters, which can be used to reproduce Table 4.
+In addition to the graph-based models from above, we train and test four classic (and strong) CF baselines. We also provide pointers to their configuration files with the exploration of hyper-parameters, which can be used to reproduce Table 4.
 
