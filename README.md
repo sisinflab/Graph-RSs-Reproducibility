@@ -38,12 +38,12 @@ After downloading, create three folders ```./data/{dataset_name}```, one for eac
 
 In case, we also provide the final tsv files for all the datasets at the following links:
 
-- Gowalla:
-- Yelp 2018: 
-- Amazon Book: 
+- Gowalla: https://drive.google.com/drive/folders/195OrcPsw7gcr_4gkyW-Ms1g73qGnj2Sw?usp=share_link
+- Yelp 2018: https://drive.google.com/drive/folders/1iH7iQImtTrOsrXgU0-v1TmgadbTpPHT9?usp=share_link
+- Amazon Book: https://drive.google.com/drive/folders/1bylpVH8t_Q_K0du8952oMa1MhUT68DUr?usp=share_link
 
 ### Additional datasets
 We directly provide the train/validation/test splittings for Allrecipes and BookCrossing. As already stated for Gowalla, Yelp 2018, and Amazon Book, create one folder for each dataset in ```./data/{dataset_name}```:
 
-- Allrecipes: 
-- BookCrossing: 
+- Allrecipes: https://drive.google.com/drive/folders/1Mz_dp9S0sToVIkUISYQAhI_Vvxqwp_WK?usp=share_link
+- BookCrossing: https://drive.google.com/drive/folders/1L4x_88uyISpUf5hGxkmw6fdLjBzXjCAR?usp=share_link
