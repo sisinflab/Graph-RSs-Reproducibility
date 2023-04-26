@@ -1,0 +1,24 @@
+experiment:
+  backend: tensorflow
+  dataset: amazon-book
+  data_config:
+    strategy: fixed
+    train_path: ../data/{0}/train.tsv
+    test_path: ../data/{0}/test.tsv
+  top_k: 20
+  evaluation:
+    cutoffs: 20
+    simple_metrics: [nDCG, Recall]
+  gpu: 0
+  external_models_path: ../external/models/__init__.py
+  models:
+    RP3beta:
+      meta:
+        hyper_max_evals: 20
+        hyper_opt_alg: tpe
+        verbose: True
+        save_recs: True
+      neighborhood: [ quniform, 5, 1000, 1]
+      alpha: [uniform, 0, 2]
+      beta: [uniform, 0, 2]
+      normalize_similarity: [True, False]
