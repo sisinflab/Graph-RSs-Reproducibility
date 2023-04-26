@@ -87,9 +87,9 @@ In addition to the graph-based models from above, we train and test four classic
 The best hyper-parameters for each classic CF model (as found in our experiments) is reported in the following:
 
 - Gowalla
-  - UserkNN: 
-  - ItemkNN:
-  - Rp3Beta:
+  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine', 'name': 'UserKNN_nn=146_sim=cosine_imp=standard_bin=False_shrink=0_norm=True_asymalpha=_tvalpha=_tvbeta=_rweights='```
+  - ItemkNN: ```'neighbors': 508.0, 'similarity': 'dot', 'name': 'ItemKNN_nn=508_sim=dot_imp=standard_bin=False_shrink=0_norm=True_asymalpha=_tvalpha=_tvbeta=_rweights='```
+  - Rp3Beta: ```'neighborhood': 777.0, 'alpha': 0.5663562161452378, 'beta': 0.001085447926739258, 'normalize_similarity': True, 'name': 'RP3beta_neighborhood=777_alpha=0$5663562161452378_beta=0$001085447926739258_normalize_similarity=True'```
   - EASER:
 
 - Yelp 2018
