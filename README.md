@@ -75,11 +75,11 @@ The following table provides links to the specific configuration of hyper-parame
 ### Benchmarking graph CF approaches using alternative baselines (RQ2)
 In addition to the graph-based models from above, we train and test four classic (and strong) CF baselines. We also provide pointers to their configuration files with the exploration of hyper-parameters, which can be used to reproduce Table 4. We recall that EASER configuration file is not provided at submission time for Amazon Book due to heavy computational costs.
 
-|         | **Gowalla** | **Yelp 2018** | **Amazon Book** |
-|---------|-------------|---------------|-----------------|
-| MostPop |             |               |                 |
-| Random  |             |               |                 |
-| UserkNN |             |               |                 |
-| ItemkNN |             |               |                 |
-| RP3Beta |             |               |                 |
-| EASER   |             |               |                 |
+|         | **Gowalla**                                                                                               | **Yelp 2018**                                                                                               | **Amazon Book**                                                                                               |
+|---------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| MostPop | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/mostpop_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/mostpop_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/mostpop_amazon-book.yml) |
+| Random  | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/random_gowalla.yml)  | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/random_yelp-2018.yml)  | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/random_amazon-book.yml)  |
+| UserkNN | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/userknn_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/userknn_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/userknn_amazon-book.yml) |
+| ItemkNN | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_amazon-book.yml) |
+| RP3Beta | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_amazon-book.yml) |
+| EASER   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_gowalla.yml)   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_yelp-2018.yml)   | ---                                                                                                           |
