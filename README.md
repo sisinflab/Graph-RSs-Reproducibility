@@ -56,9 +56,9 @@ To reproduce the results reported in Table 3, run the following:
 ```
 # Reproduce table 3
 $ CUBLAS_WORKSPACE_CONFIG=:4096:8 python3.8 -u start_experiments.py \
---dataset {dataset_name} \
---model {model_name} \
---gpu {gpu_id}
+$ --dataset {dataset_name} \
+$ --model {model_name} \
+$ --gpu {gpu_id}
 ```
 Note that ```CUBLAS_WORKSPACE_CONFIG=:4096:8``` (which may change depending on your configuration) is needed to ensure the complete reproducibility of the experiments (otherwise, PyTorch may run some operations in their non-deterministic version).
 
