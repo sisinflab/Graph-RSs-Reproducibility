@@ -105,7 +105,7 @@ The best hyper-parameters for each classic CF model (as found in our experiments
   - EASER: N.A.
 
 ### Extending the experimental comparison to new datasets (RQ3 — RQ4)
-We report the configuration files (with hyper-parameters) for each model/dataset pair for classic + graph CF baselines and Allrecipes and BookCrossing.
+We report the configuration files (with hyper-parameter search spaces) for each model/dataset pair for classic + graph CF baselines and Allrecipes and BookCrossing.
 
 |          | **Allrecipes**                                                                                                | **BookCrossing**                                                                                                |
 |----------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
