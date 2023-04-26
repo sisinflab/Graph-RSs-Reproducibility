@@ -125,10 +125,10 @@ We report the configuration files (with hyper-parameter search spaces) for each 
 The best hyper-parameters for each classic + graph CF model (as found in our experiments) are reported in the following:
 
 - Allrecipes
-  - UserkNN: 
-  - ItemkNN:
-  - RP3Beta:
-  - EASER:
+  - UserkNN: ```neighbors: 863.0, similarity: 'cosine'```
+  - ItemkNN: ```neighbors: 508.0, similarity: 'dot'```
+  - RP3Beta: ```neighborhood: 777.0, alpha: 0.5663562161452378, beta: 0.001085447926739258, normalize_similarity: True```
+  - EASER: ```l2_norm: 555344.9240485814```
   - NGCF: ```lr: 0.0010492631473907471, epochs: 100, factors: 64, batch_size: 128, l_w: 0.08623551848300251, n_layers: 1, weight_size: 64, node_dropout: 0.5704755544541924, message_dropout: 0.37665593943318876, normalize: True```
   - DGCF: ```lr: 0.000313132757493385, epochs: 10, factors: 64, batch_size: 256, l_w_bpr: 3.3519512293075625e-05, l_w_ind: 0.00021537560246909769, n_layers: 2, routing_iterations: 2, intents: 4```
   - LightGCN: ```lr: 0.001, epochs: 10, factors: 64, batch_size: 256, l_w: 0.001288395174690605, n_layers: 4, normalize: True```
