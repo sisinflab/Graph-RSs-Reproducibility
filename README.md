@@ -88,7 +88,7 @@ The best hyper-parameters for each classic CF model (as found in our experiments
 
 - Gowalla
   - UserkNN: ```nn=146_sim=cosine_imp=standard_bin=False_shrink=0_norm=True_asymalpha=_tvalpha=_tvbeta=_rweights=```
-  - ItemkNN: 
+  - ItemkNN: ```nn=508_sim=dot_imp=standard_bin=False_shrink=0_norm=True_asymalpha=_tvalpha=_tvbeta=_rweights=```
   - Rp3Beta: 
   - EASER:
 
