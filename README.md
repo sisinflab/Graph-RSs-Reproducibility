@@ -93,10 +93,10 @@ The best hyper-parameters for each classic CF model (as found in our experiments
   - EASER:
 
 - Yelp 2018
-  - UserkNN: 
-  - ItemkNN:
-  - Rp3Beta:
-  - EASER:
+  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
+  - ItemkNN: ```'neighbors': 144.0, 'similarity': 'cosine'```
+  - Rp3Beta: ```'neighborhood': 342.0, 'alpha': 0.7681732734954694, 'beta': 0.4181395996963926, 'normalize_similarity': True```
+  - EASER: ```'l2_norm': 212.98774633994572```
 
 - Amazon Book
   - UserkNN: 
