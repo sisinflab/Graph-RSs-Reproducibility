@@ -83,3 +83,11 @@ In addition to the graph-based models from above, we train and test four classic
 | ItemkNN | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_amazon-book.yml) |
 | RP3Beta | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_amazon-book.yml) |
 | EASER   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_gowalla.yml)   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_yelp-2018.yml)   | ---                                                                                                           |
+
+The best hyper-parameters for each classic CF model (as found in our experiments) is reported in the following:
+
+- Gowalla
+  - UserkNN: 
+  - ItemkNN:
+  - Rp3Beta:
+  - EASER:
