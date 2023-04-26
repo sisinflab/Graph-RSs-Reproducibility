@@ -147,3 +147,8 @@ The best hyper-parameters for each classic + graph CF model (as found in our exp
   - SGL: ```lr: 0.001, epochs: 10, batch_size: 128, factors: 64, l_w: 1e-4, n_layers: 4, ssl_temp: 0.3831504020789032, ssl_reg: 0.14847461762325737, ssl_ratio: 0.18119634034037221, sampling: rw```
   - UltraGCN: ```lr: 1e-4, epochs: 205, factors: 64, batch_size: 128, g: 1e-4, l: 2.1590977284940767, w1: 0.4071845141372458, w2: 2.674735729193082e-06, w3: 0.11655266791027195, w4: 0.05001575677944944, ii_n_n: 10, n_n: 300, n_w: 300, s_s_p: False, i_w: 1e-4```
   - GFCF: ```svd_factors: 64, alpha: 0.4240013631942601```
+
+For RQ4, you need to generate the tsv files where each user from the training set is assigned one of the four quartiles. To do so, run the script ```./quartiles_characteristics.py```, by changing the name of the dataset inside the script accordingly. This will create (for each dataset) 3 tsv files, one for each hop (i.e., 1-hop, 2-hop, 3-hop). In case, we directly provide such files for your convenience in the same folders of Allrecipes and BookCrossing (see above).
+
+Once all models have been trained, and tsv files for the user groups have been downloaded and correctly placed, you may want to generate the recommendation lists ONLY for the best hyper-parameter configuration for each model/dataset pair. These will be used to calculate the nDCG on each user group. 
+
