@@ -13,11 +13,11 @@ If you have the possibility to install CUDA on your workstation (i.e., `10.2`), 
 ```
 # PYTORCH ENVIRONMENT (CUDA 10.2, cuDNN 8.0)
 
-$ python3 -m venv venv
+$ python3.8 -m venv venv
 $ source venv/bin/activate
 $ pip install --upgrade pip
 $ pip install -r requirements.txt
-$ pip install pyg-lib torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.12.0+cu102.html
+$ pip install -r requirements_torch_geometric.txt
 ```
 
 ### Installation guidelines: scenario #2
@@ -25,6 +25,4 @@ A more convenient way of running experiments is to instantiate a docker containe
 
 Make sure you have Docker and NVIDIA Container Toolkit installed on your machine (you may refer to this [guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#installing-on-ubuntu-and-debian)).
 
-Then, you may use the following Docker image to instantiate the container equipped with CUDA `10.2`:
-
-- Container Docker with CUDA `10.2` and cuDNN `8.0` (the environment for `PyTorch`): [link](https://hub.docker.com/layers/nvidia/cuda/10.2-cudnn8-devel-ubuntu18.04/images/sha256-3d1aefa978b106e8cbe50743bba8c4ddadacf13fe3165dd67a35e4d904f3aabe?context=explore)
+Then, you may use the following Docker image to instantiate the container equipped with CUDA `10.2` and cuDNN `8.0`: [link](https://hub.docker.com/layers/nvidia/cuda/10.2-cudnn8-devel-ubuntu18.04/images/sha256-3d1aefa978b106e8cbe50743bba8c4ddadacf13fe3165dd67a35e4d904f3aabe?context=explore)
