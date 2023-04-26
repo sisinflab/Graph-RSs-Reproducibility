@@ -125,12 +125,12 @@ We report the configuration files (with hyper-parameter search spaces) for each 
 The best hyper-parameters for each classic + graph CF model (as found in our experiments) is reported in the following:
 
 - Allrecipes
-  - UserkNN: ```lr: 0.0010492631473907471, epochs: 100, factors: 64, batch_size: 128, l_w: 0.08623551848300251, n_layers: 1, weight_size: 64, node_dropout: 0.5704755544541924, message_dropout: 0.37665593943318876, normalize: True```
+  - UserkNN: 
   - ItemkNN:
   - RP3Beta:
   - EASER:
-  - NGCF:
-  - DGCF:
+  - NGCF: ```lr: 0.0010492631473907471, epochs: 100, factors: 64, batch_size: 128, l_w: 0.08623551848300251, n_layers: 1, weight_size: 64, node_dropout: 0.5704755544541924, message_dropout: 0.37665593943318876, normalize: True```
+  - DGCF: ```lr: 0.000313132757493385, epochs: 10, factors: 64, batch_size: 256, l_w_bpr: 3.3519512293075625e-05, l_w_ind: 0.00021537560246909769, n_layers: 2, routing_iterations: 2, intents: 4```
   - LightGCN:
   - SGL:
   - UltraGCN:
@@ -141,8 +141,8 @@ The best hyper-parameters for each classic + graph CF model (as found in our exp
   - ItemkNN:
   - RP3Beta:
   - EASER:
-  - NGCF:
-  - DGCF:
+  - NGCF: ```lr: 0.001313040990458504, epochs: 150, factors: 64, batch_size: 128, l_w: 0.007471352712353916, n_layers: 1, weight_size: 64, node_dropout: 0.6222126221705062, message_dropout: 0.2768938386628866, normalize: True```
+  - DGCF: ```lr: 0.00033659666428326467, epochs: 112, factors: 64, batch_size: 1024, l_w_bpr: 0.0005015002430942853, l_w_ind: 1.0625908485203885e-05, n_layers: 1, routing_iterations: 2, intents: 4```
   - LightGCN:
   - SGL:
   - UltraGCN:
