@@ -33,4 +33,4 @@ We used Gowalla, Yelp 2018, and Amazon Book datasets. The original links may be 
 - Yelp 2018: https://github.com/kuandeng/LightGCN/tree/master/Data/yelp2018
 - Amazon Book: https://github.com/xiangwang1223/neural_graph_collaborative_filtering/tree/master/Data/amazon-book
 
-After downloading, create three folders ```./data/{dataset_name}```, one for each dataset. Then, you run the script ```./map_dataset.py```, by changing the name of the dataset within the script itself. It will generate the train/test files for each dataset in a format compatible for Elliot (i.e., tsv file with three columns referring to user/item.
+After downloading, create three folders ```./data/{dataset_name}```, one for each dataset. Then, run the script ```./map_dataset.py```, by changing the name of the dataset within the script itself. It will generate the train/test files for each dataset in a format compatible for Elliot (i.e., tsv file with three columns referring to user/item.
