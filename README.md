@@ -84,10 +84,10 @@ In addition to the graph-based models from above, we train and test four classic
 | RP3Beta | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_amazon-book.yml) |
 | EASER   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_gowalla.yml)   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_yelp-2018.yml)   | ---                                                                                                           |
 
-The best hyper-parameters for each classic CF model (as found in our experiments) is reported in the following:
+The best hyper-parameters for each classic CF model (as found in our experiments) are reported in the following:
 
 - Gowalla
-  - UserkNN: ``neighbors: 146.0, similarity: 'cosine'```
+  - UserkNN: ```neighbors: 146.0, similarity: 'cosine'```
   - ItemkNN: ```neighbors: 508.0, similarity: 'dot'```
   - Rp3Beta: ```neighborhood: 777.0, alpha: 0.5663562161452378, beta: 0.001085447926739258, normalize_similarity: True```
   - EASER: ```l2_norm: 15.930101258108873```
@@ -122,7 +122,7 @@ We report the configuration files (with hyper-parameter search spaces) for each 
 | UltraGCN | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/ultragcn_allrecipes.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/ultragcn_bookcrossing.yml) |
 | GFCF     | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/gfcf_allrecipes.yml)     | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/gfcf_bookcrossing.yml)     |
 
-The best hyper-parameters for each classic + graph CF model (as found in our experiments) is reported in the following:
+The best hyper-parameters for each classic + graph CF model (as found in our experiments) are reported in the following:
 
 - Allrecipes
   - UserkNN: 
