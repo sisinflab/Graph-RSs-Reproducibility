@@ -5,6 +5,8 @@ Reproducibility-driven Analysis_", under review at RecSys 2023 (Reproducibility 
 
 This repository is heavily dependent on the framework **Elliot**, so we suggest you refer to the official GitHub [page](https://github.com/sisinflab/elliot) and [documentation](https://elliot.readthedocs.io/en/latest/).
 
+## Pre-requisites
+
 We implemented and tested our models in `PyTorch==1.12.0`, with CUDA `10.2` and cuDNN `8.0`. Additionally, some of graph-based models require `PyTorch Geometric`, which is compatible with the versions of CUDA and `PyTorch` we indicated above.
 
 ### Installation guidelines: scenario #1
