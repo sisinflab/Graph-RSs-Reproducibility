@@ -87,7 +87,7 @@ In addition to the graph-based models from above, we train and test four classic
 The best hyper-parameters for each classic CF model (as found in our experiments) is reported in the following:
 
 - Gowalla
-  - UserkNN: ```'UserKNN_nn=146_sim=cosine_imp=standard_bin=False_shrink=0_norm=True_asymalpha=_tvalpha=_tvbeta=_rweights='```
+  - UserkNN: ```nn=146_sim=cosine_imp=standard_bin=False_shrink=0_norm=True_asymalpha=_tvalpha=_tvbeta=_rweights=```
   - ItemkNN: 
   - Rp3Beta: 
   - EASER:
