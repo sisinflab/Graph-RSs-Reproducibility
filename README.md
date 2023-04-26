@@ -27,10 +27,18 @@ A more convenient way of running experiments is to instantiate a docker containe
 
 ## Datasets
 
+### Reproducibility datasets
 We used Gowalla, Yelp 2018, and Amazon Book datasets. The original links may be found here, where the train/test splitting has already been provided:
 
 - Gowalla: https://github.com/xiangwang1223/neural_graph_collaborative_filtering/tree/master/Data/gowalla
 - Yelp 2018: https://github.com/kuandeng/LightGCN/tree/master/Data/yelp2018
 - Amazon Book: https://github.com/xiangwang1223/neural_graph_collaborative_filtering/tree/master/Data/amazon-book
 
-After downloading, create three folders ```./data/{dataset_name}```, one for each dataset. Then, run the script ```./map_dataset.py```, by changing the name of the dataset within the script itself. It will generate the train/test files for each dataset in a format compatible for Elliot (i.e., tsv file with three columns referring to user/item.
+After downloading, create three folders ```./data/{dataset_name}```, one for each dataset. Then, run the script ```./map_dataset.py```, by changing the name of the dataset within the script itself. It will generate the train/test files for each dataset in a format compatible for Elliot (i.e., tsv file with three columns referring to user/item).
+
+
+### Additional datasets
+We directly provide the train/validation/test splittings for Allrecipes and BookCrossing. As already stated for Gowalla, Yelp 2018, and Amazon Book, create one folder for each dataset in ```./data/{dataset_name}```:
+
+- Allrecipes: 
+- BookCrossing: 
