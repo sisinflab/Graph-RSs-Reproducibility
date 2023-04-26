@@ -54,7 +54,6 @@ We directly provide the train/validation/test splittings for Allrecipes and Book
 To reproduce the results reported in Table 3, run the following:
 
 ```
-# Reproduce table 3
 $ CUBLAS_WORKSPACE_CONFIG=:4096:8 python3.8 -u start_experiments.py \
 $ --dataset {dataset_name} \
 $ --model {model_name} \
