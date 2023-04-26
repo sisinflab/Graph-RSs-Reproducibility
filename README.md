@@ -47,3 +47,15 @@ We directly provide the train/validation/test splittings for Allrecipes and Book
 
 - Allrecipes: https://drive.google.com/drive/folders/1Mz_dp9S0sToVIkUISYQAhI_Vvxqwp_WK?usp=share_link
 - BookCrossing: https://drive.google.com/drive/folders/1L4x_88uyISpUf5hGxkmw6fdLjBzXjCAR?usp=share_link
+
+## Results
+
+### Replication of prior results (RQ1)
+To reproduce the results reported in Table 3, run the following:
+
+```
+# Reproduce table 3
+$ python3.8 -u start_experiments.py --dataset {dataset_name} --model {model_name} --gpu {gpu_id}
+```
+The following table provides links to the specific configuration of hyper-parameters we adopted for each graph-based model (derived from the original papers and/or the codes):
+
