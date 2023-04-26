@@ -91,3 +91,15 @@ The best hyper-parameters for each classic CF model (as found in our experiments
   - ItemkNN:
   - Rp3Beta:
   - EASER:
+
+- Yelp 2018
+  - UserkNN: 
+  - ItemkNN:
+  - Rp3Beta:
+  - EASER:
+
+- Amazon Book
+  - UserkNN: 
+  - ItemkNN:
+  - Rp3Beta:
+  - EASER: N.A.
