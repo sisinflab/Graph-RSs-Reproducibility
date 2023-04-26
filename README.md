@@ -134,7 +134,7 @@ The best hyper-parameters for each classic + graph CF model (as found in our exp
   - LightGCN: ```lr: 0.001, epochs: 10, factors: 64, batch_size: 256, l_w: 0.001288395174690605, n_layers: 4, normalize: True```
   - SGL: ```lr: 0.001, epochs: 10, batch_size: 128, factors: 64, l_w: 1e-4, n_layers: 3, ssl_temp: 0.6492261261178492, ssl_reg: 0.012429441724966553, ssl_ratio: 0.2618285305261178492, sampling: nd```
   - UltraGCN: ```lr: 1e-4, epochs: 240, factors: 64, batch_size: 128, g: 1e-4, l: 0.6421380210212072, w1: 0.026431283275666788, w2: 0.0006086626045670742, w3: 2.3712235041563928e-07, w4: 0.03156224646525972, ii_n_n: 10, n_n: 300, n_w: 300, s_s_p: False, i_w: 1e-4```
-  - GFCF:
+  - GFCF: ```svd_factors: 256, alpha: 0.5477395514607551```
 
 - BookCrossing
   - UserkNN:
@@ -146,4 +146,4 @@ The best hyper-parameters for each classic + graph CF model (as found in our exp
   - LightGCN: ```lr: 0.001, epochs: 160, factors: 64, batch_size: 256, l_w: 0.00128839517469060, n_layers: 4, normalize: True```
   - SGL: ```lr: 0.001, epochs: 10, batch_size: 128, factors: 64, l_w: 1e-4, n_layers: 4, ssl_temp: 0.3831504020789032, ssl_reg: 0.14847461762325737, ssl_ratio: 0.18119634034037221, sampling: rw```
   - UltraGCN: ```lr: 1e-4, epochs: 205, factors: 64, batch_size: 128, g: 1e-4, l: 2.1590977284940767, w1: 0.4071845141372458, w2: 2.674735729193082e-06, w3: 0.11655266791027195, w4: 0.05001575677944944, ii_n_n: 10, n_n: 300, n_w: 300, s_s_p: False, i_w: 1e-4```
-  - GFCF:
+  - GFCF: ```svd_factors: 64, alpha: 0.4240013631942601```
