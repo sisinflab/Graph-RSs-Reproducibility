@@ -8,7 +8,7 @@ This repository is heavily dependent on the framework **Elliot**, so we suggest 
 We implemented and tested our models in `PyTorch==1.12.0`, with CUDA `10.2` and cuDNN `8.0`. Additionally, some of graph-based models require `PyTorch Geometric`, which is compatible with the versions of CUDA and `PyTorch` we indicated above.
 
 ### Installation guidelines: scenario #1
-If you have the possibility to install CUDA on your workstation (i.e., `10.2`), you may create the virtual environment with the requirement file we included in the repository, as follows:
+If you have the possibility to install CUDA on your workstation (i.e., `10.2`), you may create the virtual environment with the requirement files we included in the repository, as follows:
 
 ```
 # PYTORCH ENVIRONMENT (CUDA 10.2, cuDNN 8.0)
