@@ -121,3 +121,29 @@ We report the configuration files (with hyper-parameter search spaces) for each 
 | SGL      | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/sgl_allrecipes.yml)      | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/sgl_bookcrossing.yml)      |
 | UltraGCN | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/ultragcn_allrecipes.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/ultragcn_bookcrossing.yml) |
 | GFCF     | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/gfcf_allrecipes.yml)     | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/gfcf_bookcrossing.yml)     |
+
+The best hyper-parameters for each classic + graph CF model (as found in our experiments) is reported in the following:
+
+- Allrecipes
+  - UserkNN:
+  - ItemkNN:
+  - RP3Beta:
+  - EASER:
+  - NGCF:
+  - DGCF:
+  - LightGCN:
+  - SGL:
+  - UltraGCN:
+  - GFCF:
+
+- BookCrossing
+  - UserkNN:
+  - ItemkNN:
+  - RP3Beta:
+  - EASER:
+  - NGCF:
+  - DGCF:
+  - LightGCN:
+  - SGL:
+  - UltraGCN:
+  - GFCF:
