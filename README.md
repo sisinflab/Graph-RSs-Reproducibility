@@ -89,7 +89,7 @@ The best hyper-parameters for each classic CF model (as found in our experiments
 - Gowalla
   - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
   - ItemkNN: ```'neighbors': 508.0, 'similarity': 'dot'```
-  - Rp3Beta: 
+  - Rp3Beta: ```'neighborhood': 777.0, 'alpha': 0.5663562161452378, 'beta': 0.001085447926739258, 'normalize_similarity': True```
   - EASER:
 
 - Yelp 2018
