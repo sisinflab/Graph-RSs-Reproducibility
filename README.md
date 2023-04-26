@@ -103,3 +103,5 @@ The best hyper-parameters for each classic CF model (as found in our experiments
   - ItemkNN: ```'neighbors': 125.0, 'similarity': 'cosine'```
   - Rp3Beta: ```'neighborhood': 496.0, 'alpha': 0.44477903655656115, 'beta': 0.5968193614337285, 'normalize_similarity': True```
   - EASER: N.A.
+
+### Extending the experimental comparison to new datasets (RQ3 — RQ4)
