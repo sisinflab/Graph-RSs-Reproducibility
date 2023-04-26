@@ -150,5 +150,10 @@ The best hyper-parameters for each classic + graph CF model (as found in our exp
 
 For RQ4, you need to generate the tsv files where each user from the training set is assigned one of the four quartiles. To do so, run the script ```./quartiles_characteristics.py```, by changing the name of the dataset inside the script accordingly. This will create (for each dataset) 3 tsv files, one for each hop (i.e., 1-hop, 2-hop, 3-hop). In case, we directly provide such files for your convenience in the same folders of Allrecipes and BookCrossing (see above).
 
-Once all models have been trained, and tsv files for the user groups have been downloaded and correctly placed, you may want to generate the recommendation lists ONLY for the best hyper-parameter configuration for each model/dataset pair. These will be used to calculate the nDCG on each user group. 
+Once all models have been trained, and tsv files for the user groups have been downloaded and correctly placed, you may want to generate the recommendation lists ONLY for the best hyper-parameter configuration for each model/dataset pair. This is done by setting the parameter ```save_recs: True``` in each configuration file. 
 
+Now, we are all set to calculate the nDCG on each user group. To do so, run the following script:
+
+```
+$ python3.8 -u start_experiments_user_groups.py --dataset {dataset_name}
+```
