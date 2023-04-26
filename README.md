@@ -75,3 +75,9 @@ The following table provides links to the specific configuration of hyper-parame
 ### Benchmarking graph CF approaches using alternative baselines (RQ2)
 In addition to the graph-based models from above, we train and test four classic (and strong) CF baselines. We also provide pointers to their configuration files with the exploration of hyper-parameters, which can be used to reproduce Table 4.
 
+|         | **Gowalla** | **Yelp 2018** | **Amazon Book** |
+|---------|-------------|---------------|-----------------|
+| UserkNN |             |               |                 |
+| ItemkNN |             |               |                 |
+| RP3Beta |             |               |                 |
+| EASER   |             |               |                 |
