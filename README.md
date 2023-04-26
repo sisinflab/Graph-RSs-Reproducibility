@@ -75,11 +75,35 @@ The following table provides links to the specific configuration of hyper-parame
 ### Benchmarking graph CF approaches using alternative baselines (RQ2)
 In addition to the graph-based models from above, we train and test four classic (and strong) CF baselines. We also provide pointers to their configuration files with the exploration of hyper-parameters, which can be used to reproduce Table 4. We recall that EASER configuration file is not provided at submission time for Amazon Book due to heavy computational costs.
 
-|         | **Gowalla** | **Yelp 2018** | **Amazon Book** |
-|---------|-------------|---------------|-----------------|
-| MostPop |             |               |                 |
-| Random  |             |               |                 |
-| UserkNN |             |               |                 |
-| ItemkNN |             |               |                 |
-| RP3Beta |             |               |                 |
-| EASER   |             |               |                 |
+|         | **Gowalla**                                                                                               | **Yelp 2018**                                                                                               | **Amazon Book**                                                                                               |
+|---------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| MostPop | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/mostpop_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/mostpop_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/mostpop_amazon-book.yml) |
+| Random  | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/random_gowalla.yml)  | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/random_yelp-2018.yml)  | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/random_amazon-book.yml)  |
+| UserkNN | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/userknn_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/userknn_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/userknn_amazon-book.yml) |
+| ItemkNN | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/itemknn_amazon-book.yml) |
+| RP3Beta | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_gowalla.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_yelp-2018.yml) | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/rp3beta_amazon-book.yml) |
+| EASER   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_gowalla.yml)   | [link](https://github.com/sisinflab/Graph-RSs-Reproducibility/blob/main/config_files/easer_yelp-2018.yml)   | ---                                                                                                           |
+
+The best hyper-parameters for each classic CF model (as found in our experiments) is reported in the following:
+
+- Gowalla
+  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
+  - ItemkNN: ```'neighbors': 508.0, 'similarity': 'dot'```
+  - Rp3Beta: ```'neighborhood': 777.0, 'alpha': 0.5663562161452378, 'beta': 0.001085447926739258, 'normalize_similarity': True```
+  - EASER: ```'l2_norm': 15.930101258108873```
+
+- Yelp 2018
+  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
+  - ItemkNN: ```'neighbors': 144.0, 'similarity': 'cosine'```
+  - Rp3Beta: ```'neighborhood': 342.0, 'alpha': 0.7681732734954694, 'beta': 0.4181395996963926, 'normalize_similarity': True```
+  - EASER: ```'l2_norm': 212.98774633994572```
+
+- Amazon Book
+  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
+  - ItemkNN: ```'neighbors': 125.0, 'similarity': 'cosine'```
+  - Rp3Beta: ```'neighborhood': 496.0, 'alpha': 0.44477903655656115, 'beta': 0.5968193614337285, 'normalize_similarity': True```
+  - EASER: N.A.
+
+### Extending the experimental comparison to new datasets (RQ3 — RQ4)
+We report the configuration files (with hyper-parameters) for each model/dataset pair for classic + graph CF baselines and Allrecipes and BookCrossing.
+
