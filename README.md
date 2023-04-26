@@ -87,21 +87,21 @@ In addition to the graph-based models from above, we train and test four classic
 The best hyper-parameters for each classic CF model (as found in our experiments) is reported in the following:
 
 - Gowalla
-  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
-  - ItemkNN: ```'neighbors': 508.0, 'similarity': 'dot'```
-  - Rp3Beta: ```'neighborhood': 777.0, 'alpha': 0.5663562161452378, 'beta': 0.001085447926739258, 'normalize_similarity': True```
-  - EASER: ```'l2_norm': 15.930101258108873```
+  - UserkNN: ``neighbors: 146.0, similarity: 'cosine'```
+  - ItemkNN: ```neighbors: 508.0, similarity: 'dot'```
+  - Rp3Beta: ```neighborhood: 777.0, alpha: 0.5663562161452378, beta: 0.001085447926739258, normalize_similarity: True```
+  - EASER: ```l2_norm: 15.930101258108873```
 
 - Yelp 2018
-  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
-  - ItemkNN: ```'neighbors': 144.0, 'similarity': 'cosine'```
-  - Rp3Beta: ```'neighborhood': 342.0, 'alpha': 0.7681732734954694, 'beta': 0.4181395996963926, 'normalize_similarity': True```
-  - EASER: ```'l2_norm': 212.98774633994572```
+  - UserkNN: ```neighbors: 146.0, similarity: 'cosine'```
+  - ItemkNN: ```neighbors: 144.0, similarity: 'cosine'```
+  - Rp3Beta: ```neighborhood: 342.0, alpha: 0.7681732734954694, beta: 0.4181395996963926, normalize_similarity: True```
+  - EASER: ```l2_norm: 212.98774633994572```
 
 - Amazon Book
-  - UserkNN: ```'neighbors': 146.0, 'similarity': 'cosine'```
-  - ItemkNN: ```'neighbors': 125.0, 'similarity': 'cosine'```
-  - Rp3Beta: ```'neighborhood': 496.0, 'alpha': 0.44477903655656115, 'beta': 0.5968193614337285, 'normalize_similarity': True```
+  - UserkNN: ```neighbors: 146.0, similarity: 'cosine'```
+  - ItemkNN: ```neighbors: 125.0, similarity: 'cosine'```
+  - Rp3Beta: ```neighborhood: 496.0, alpha: 0.44477903655656115, beta: 0.5968193614337285, normalize_similarity: True```
   - EASER: N.A.
 
 ### Extending the experimental comparison to new datasets (RQ3 — RQ4)
@@ -125,7 +125,7 @@ We report the configuration files (with hyper-parameter search spaces) for each 
 The best hyper-parameters for each classic + graph CF model (as found in our experiments) is reported in the following:
 
 - Allrecipes
-  - UserkNN:
+  - UserkNN: ```lr: 0.0010492631473907471, epochs: 100, factors: 64, batch_size: 128, l_w: 0.08623551848300251, n_layers: 1, weight_size: 64, node_dropout: 0.5704755544541924, message_dropout: 0.37665593943318876, normalize: True```
   - ItemkNN:
   - RP3Beta:
   - EASER:
