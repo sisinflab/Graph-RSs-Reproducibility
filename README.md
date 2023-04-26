@@ -137,10 +137,10 @@ The best hyper-parameters for each classic + graph CF model (as found in our exp
   - GFCF: ```svd_factors: 256, alpha: 0.5477395514607551```
 
 - BookCrossing
-  - UserkNN:
-  - ItemkNN:
-  - RP3Beta:
-  - EASER:
+  - UserkNN: ```neighbors: 360.0, similarity: 'cosine'```
+  - ItemkNN: ```neighbors: 125.0, similarity: 'cosine'```
+  - RP3Beta: ```neighborhood: 777.0, alpha: 0.5663562161452378, beta: 0.001085447926739258, normalize_similarity: True```
+  - EASER: ```l2_norm: 97.97026620421359```
   - NGCF: ```lr: 0.001313040990458504, epochs: 150, factors: 64, batch_size: 128, l_w: 0.007471352712353916, n_layers: 1, weight_size: 64, node_dropout: 0.6222126221705062, message_dropout: 0.2768938386628866, normalize: True```
   - DGCF: ```lr: 0.00033659666428326467, epochs: 112, factors: 64, batch_size: 1024, l_w_bpr: 0.0005015002430942853, l_w_ind: 1.0625908485203885e-05, n_layers: 1, routing_iterations: 2, intents: 4```
   - LightGCN: ```lr: 0.001, epochs: 160, factors: 64, batch_size: 256, l_w: 0.00128839517469060, n_layers: 4, normalize: True```
