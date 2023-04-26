@@ -1,0 +1,24 @@
+experiment:
+  backend: pytorch
+  data_config:
+    strategy: fixed
+    train_path: ../data/{0}/train.tsv
+    test_path: ../data/{0}/test.tsv
+  dataset: gowalla
+  top_k: 20
+  evaluation:
+    cutoffs: [20]
+    simple_metrics: [Recall, nDCG]
+  gpu: 0
+  external_models_path: ../external/models/__init__.py
+  models:
+    external.GFCF:
+      meta:
+        hyper_opt_alg: grid
+        verbose: True
+        save_weights: False
+        validation_metric: Recall@20
+        restore: False
+        save_recs: True
+      svd_factors: 256
+      alpha: 0.3

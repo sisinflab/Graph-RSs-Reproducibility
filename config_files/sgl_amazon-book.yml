@@ -1,0 +1,39 @@
+experiment:
+  backend: pytorch
+  data_config:
+    strategy: fixed
+    train_path: ../data/{0}/train.tsv
+    test_path: ../data/{0}/test.tsv
+  dataset: amazon-book
+  top_k: 20
+  evaluation:
+    cutoffs: [20]
+    simple_metrics: [Recall, nDCG]
+  gpu: 0
+  external_models_path: ../external/models/__init__.py
+  models:
+    external.SGL:
+      meta:
+        hyper_opt_alg: grid
+        verbose: True
+        save_weights: False
+        validation_rate: 1
+        validation_metric: Recall@20
+        restore: False
+        write_best_iterations: True
+      lr: 0.001
+      epochs: 1000
+      batch_size: 1024
+      factors: 64
+      l_w: 1e-4
+      n_layers: 3
+      ssl_temp: 0.2
+      ssl_reg: 0.5
+      ssl_ratio: 0.1
+      sampling: ed
+      seed: 2021
+      early_stopping:
+        patience: 10
+        mode: auto
+        monitor: Recall@20
+        verbose: True

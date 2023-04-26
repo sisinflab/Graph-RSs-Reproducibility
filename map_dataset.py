@@ -1,6 +1,6 @@
 import pandas as pd
 
-dataset = 'yelp-2018'
+dataset = 'gowalla'
 train_filename = 'train.txt'
 test_filename = 'test.txt'
 

@@ -1,0 +1,36 @@
+experiment:
+  backend: pytorch
+  data_config:
+    strategy: fixed
+    train_path: ../data/{0}/train.tsv
+    test_path: ../data/{0}/test.tsv
+  dataset: gowalla
+  top_k: 20
+  evaluation:
+    cutoffs: [20]
+    simple_metrics: [Recall, nDCG]
+  gpu: 0
+  external_models_path: ../external/models/__init__.py
+  models:
+    external.LightGCN:
+      meta:
+        hyper_opt_alg: grid
+        verbose: True
+        save_weights: False
+        validation_rate: 20
+        validation_metric: Recall@20
+        restore: False
+        write_best_iterations: True
+      lr: 0.001
+      epochs: 1000
+      factors: 64
+      batch_size: 2048
+      l_w: 1e-4
+      n_layers: 3
+      normalize: True
+      seed: 42
+      early_stopping:
+        patience: 5
+        mode: auto
+        monitor: Recall@20
+        verbose: True
