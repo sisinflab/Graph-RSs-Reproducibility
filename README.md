@@ -154,5 +154,7 @@ Once all models have been trained, and tsv files for the user groups have been d
 Now, we are all set to calculate the nDCG on each user group. To do so, run the following script:
 
 ```
-$ python3.8 -u start_experiments_user_groups.py --dataset {dataset_name}
+$ python3.8 -u start_experiments_user_groups.py \
+$ --dataset {dataset_name} \
+$ --hop {hop_number}
 ```
