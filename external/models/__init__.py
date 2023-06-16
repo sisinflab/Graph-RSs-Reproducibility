@@ -15,6 +15,7 @@ for _backend in sys.modules["external"].backend:
         from .ngcf.NGCF import NGCF
         from .lightgcn.LightGCN import LightGCN
         from .dgcf.DGCF import DGCF
+        from .sgl.SGL import SGL
         from .ultragcn import UltraGCN
         from .gfcf import GFCF
         from .sgl import SGL
