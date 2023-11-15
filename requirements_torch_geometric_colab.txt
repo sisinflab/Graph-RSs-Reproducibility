@@ -1,4 +1,4 @@
--f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+-f https://data.pyg.org/whl/torch-2.1.0+cu118.html
 sparsesvd==0.2.0
 torch_geometric
 torch-scatter
