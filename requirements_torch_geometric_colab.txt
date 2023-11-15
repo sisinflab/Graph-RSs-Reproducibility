@@ -1,1 +1,7 @@
-r
+-f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+sparsesvd==0.2.0
+torch_geometric
+torch-scatter
+torch_sparse
+torch_cluster
+torch_spline_conv
