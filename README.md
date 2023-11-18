@@ -1,7 +1,7 @@
 # Graph-RSs-Reproducibility
 
 This is the official repository for the paper "_Challenging the Myth of Graph Collaborative Filtering: a Reasoned and
-Reproducibility-driven Analysis_", under review at RecSys 2023 (Reproducibility Track).
+Reproducibility-driven Analysis_", accepted at RecSys 2023 (Reproducibility Track).
 
 This repository is heavily dependent on the framework **Elliot**, so we suggest you refer to the official GitHub [page](https://github.com/sisinflab/elliot) and [documentation](https://elliot.readthedocs.io/en/latest/).
 

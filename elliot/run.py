@@ -71,6 +71,8 @@ def run_experiment(config_path: str = ''):
                 sys.modules[spec.name] = external
                 spec.loader.exec_module(external)
                 model_class = getattr(importlib.import_module("external"), key.split(".", 1)[1])
+            elif key.startswith("colab."):
+                model_class = getattr(importlib.import_module("__main__"), key.split(".", 1)[1])
             else:
                 model_class = getattr(importlib.import_module("elliot.recommender"), key)
 
