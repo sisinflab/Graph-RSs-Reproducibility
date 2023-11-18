@@ -1,0 +1,1 @@
+from .LightGCNNoRepr import LightGCNNoRepr
