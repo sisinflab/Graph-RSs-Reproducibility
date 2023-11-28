@@ -143,12 +143,6 @@ class SGL(RecMixin, BaseRecommenderModel):
 
             self.evaluate(it, loss / (it + 1))
 
-        if it + 1 == self._epochs and self._write_best_iterations:  # never met an early stopping condition
-            with open(self._config.path_output_rec_performance + '/best_iterations.tsv', 'a') as f:
-                f.write(self.name + '\t' + str(self._params.best_iteration) + '\n')
-            self.logger.info(f"Best iteration: {self._params.best_iteration}")
-            self.logger.info(f"Current configuration: {self.name}")
-
     def create_adj_mat(self, is_subgraph=False, aug_type='ed'):
         if is_subgraph and self._ssl_ratio > 0:
             if aug_type == 'nd':
