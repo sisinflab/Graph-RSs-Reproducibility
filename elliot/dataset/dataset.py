@@ -224,6 +224,10 @@ class DataSet(AbstractDataset):
         self.i_train_dict = {self.public_users[user]: {self.public_items[i]: v for i, v in items.items()}
                              for user, items in self.train_dict.items()}
 
+        self.edge_index = data_tuple[0]
+        self.edge_index['userId'] = self.edge_index['userId'].map(self.public_users)
+        self.edge_index['itemId'] = self.edge_index['itemId'].map(self.public_items)
+
         self.sp_i_train = self.build_sparse()
         self.sp_i_train_ratings = self.build_sparse_ratings()
 
