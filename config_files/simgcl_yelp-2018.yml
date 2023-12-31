@@ -21,7 +21,7 @@ experiment:
         validation_metric: Recall@20
         restore: False
       lr: 0.001
-      epochs: 2
+      epochs: 20
       factors: 64
       batch_size: 2048
       l_w: 1e-4
