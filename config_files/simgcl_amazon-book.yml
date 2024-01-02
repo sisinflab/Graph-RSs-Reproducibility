@@ -25,7 +25,7 @@ experiment:
       factors: 64
       batch_size: 2048
       l_w: 1e-4
-      n_layers: 2
+      n_layers: 3
       eps: 0.1
-      reg_cl: 0.5
+      reg_cl: 2
       seed: 42
